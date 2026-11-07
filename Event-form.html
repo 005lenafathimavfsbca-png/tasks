@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registretion form </title>
+</head>
+<body>
+        <h1>Registration form</h1>
+        
+        <form>
+
+            <h2>Personal Information</h2>
+
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+            <br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br><br>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" pattern="[10]" required>
+            <br><br>
+
+            <label for="studentid">Student ID:</label>
+            <input type="text" id="studentid" name="studentid" pattern="[A-Z]" required>
+            <br><br>
+
+            <label for="date">Date of Birth:</label>
+            <input type="date" id="date" name="date" required>
+            <br><br>
+
+            <h2>Ticket choice</h2>
+
+            <label for="ticket">Select Ticket:</label>
+            <select id="ticket" name="ticket">
+                <option value="">Choose Ticket</option>
+                <option value="good">good</option>
+                <option value="better">better</option>
+            </select>
+            <br><br>
+
+            <label for="color">Badge Color:</label>
+            <input type="color" id="color" name="color">
+            <br><br>
+
+            <label for="skill">Skill Level:</label>
+            <input type="range" id="skill" name="skill" min="1" max="5">
+            <br><br>
+
+            <input type="checkbox" id="html" name="workshop" value="HTML">
+            <label for="html">HTML</label>
+            <br>
+
+            <input type="checkbox" id="CSS" name="workshop" value="CSS">
+            <label for="CSS">CSS</label>
+            <br>
+
+            <input type="checkbox" id="JS" name="workshop" value="JS">
+            <label for="JS">JS</label>
+            <br>
+
+            <input type="checkbox" id="react" name="workshop" value="reatct">
+            <label for="react">react</label>
+            <br><br>
+
+            <h2>Comments</h2>
+
+            <label for="comments">Additional Notes:</label>
+            <textarea id="comments" name="comments" rows="10" cols="60" maxlength="500"></textarea>
+            <br><br>
+
+            <input type="submit" value="Register">
+            <input type="reset" value="Clear">
+        </form>
+
+    </body>
+
+    </html>

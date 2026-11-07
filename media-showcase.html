@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media-showcase</title>
+</head>
+
+<body>
+
+    <h1>media Showcase</h1>
+
+    <h2>product gallery</h2>
+
+    <img src="img/image.jpeg" 
+    srcset="img/image.jpeg 4gt00w,
+        img/image.jpeg 800w,
+        img/image.jpeg 1200w
+    " sizes="(max-width: 600px)" alt="Laptop on a desk" width="400">
+
+    <h3>Images</h3>
+
+    <img src="img/image.jpeg" srcset="
+        img/image.jpeg 400w,
+        img/image.jpeg 800w,
+        img/image.jpeg 1200w
+    " sizes="(max-width: 600px)" alt="Laptop on a desk" width="400" loading="lazy">
+
+
+    <br><br>
+
+    <h2>Product audio and Video</h2>
+    <video width="500" controls poster="img/image.jpeg">
+
+        <source src="img/video.mp4" type="video/mp4">
+        <source src="img/video.ogg" type="video/ogg">
+
+
+        <track src="img/captions.vtt" kind="subtitles" srclang="en" label="English">
+
+    </video>
+</body>
+
+</html>
